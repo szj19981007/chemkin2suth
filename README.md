@@ -9,7 +9,7 @@ Convert Chemkin transport files into OpenFOAM Sutherland transport coefficients 
 Clone the repository and install in editable mode:
 
 ```bash
-git clone https://xxxx
+git clone https://github.com/szj19981007/chemkin2suth.git
 cd chemkin2suth
 pip install -e .
 ```
