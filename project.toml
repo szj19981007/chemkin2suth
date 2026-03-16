@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chemkin2suth"
+version = "0.1.0"
+description = "Convert Chemkin transport files to OpenFOAM Sutherland format"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "Zijian Sun", email="zs0806@princeton.edu" }
+]
+dependencies = [
+  "numpy",
+  "scipy"
+]
+license = {file = "LICENSE"}
+
+[project.scripts]
+chemkin2suth = "chemkin2suth.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
